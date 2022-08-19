@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.scss';
-import homeIcon from './assets/images/icons/light/home-icon.png';
-import projectIcon from './assets/images/icons/light/project-icon.png';
-import contactIcon from './assets/images/icons/light/contact-icon.png';
-import downloadIcon from './assets/images/icons/light/download-icon.png';
+import homeIcon from './assets/images/icons/navbar/light/home-icon.png';
+import projectIcon from './assets/images/icons/navbar/light/project-icon.png';
+import contactIcon from './assets/images/icons/navbar/light/contact-icon.png';
+import downloadIcon from './assets/images/icons/navbar/light/download-icon.png';
 import SoftSkills from './components/soft-skills/SoftSkills';
 
 export default function App() {
