@@ -9,6 +9,10 @@ $mediumOrchid: #9F599C;
 $cornFlowerBlue: #7D8CDC;
 $whiteSmoke: #F0F2F3;
 
+// Cursors
+$defaultCursor: url("./assets/images/cursors/cursor-default.png"), default;
+$pointerCurror: url("./assets/images/cursors/cursor-pointer.png"), pointer;
+
 // Mixins
 @mixin dimension($w, $h) {
   width: $w;
@@ -32,6 +36,7 @@ $whiteSmoke: #F0F2F3;
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  cursor: $defaultCursor;
   font-family: $roboto;
   font-size: 14px;
 }
