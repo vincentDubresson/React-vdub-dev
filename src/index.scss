@@ -7,6 +7,7 @@ $midnightBlue: #222D47;
 $indianRed: #CC4261;
 $mediumOrchid: #9F599C;
 $cornFlowerBlue: #7D8CDC;
+$mustardYellow: #e8b730;
 $whiteSmoke: #F0F2F3;
 
 // Cursors
@@ -42,11 +43,9 @@ html {
 }
 
 body {
-  background-color: $indianRed;
+  background-color: $mediumOrchid;
   margin: 0;
   padding: 0;
-  //-webkit-font-smoothing: antialiased;
-  //-moz-osx-font-smoothing: grayscale;
 }
 
 // Default text config
