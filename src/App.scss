@@ -1,4 +1,13 @@
+@import "./index.scss";
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .Header {
+    @include dimension(100vw, auto);
+    border: 1px solid black;
+  }
 }
 
