@@ -1,8 +1,97 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+$roboto: 'Roboto', sans-serif;
+
+// Color Palette
+$whiteSmoke: #F0F2F3;
+$gainsboro: #DCDCDC;
+$blueIndigo: #515A78;
+$midnightBlue: #222D47;
+$mustardYellow: #D5A419;
+
+// Cursors
+$defaultCursor: url("./assets/images/cursors/cursor-default.png"), default;
+$pointerCurror: url("./assets/images/cursors/cursor-pointer.png"), pointer;
+
+// Mixins
+@mixin lightenBackground($color) {
+  background-color: lighten($color, 10%);
+}
+@mixin dimension($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin absolutePosition($top, $left) {
+  position : absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin absolutePositionRight($top, $right) {
+  position : absolute;
+  top: $top;
+  right: $right;
+}
+
+
+// Default SCSS config
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  cursor: $defaultCursor;
+  font-family: $roboto;
+  font-size: 14px;
+}
+
 body {
+  background-color: $whiteSmoke;
+  color: $midnightBlue;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+// Default text config
+h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 1.75rem;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+p, span, a, input, textarea {
+  margin: 0;
+  font-size: 1rem;
+}
+
+// Media-queries
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 16px;
+  }
 }
