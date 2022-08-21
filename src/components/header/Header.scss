@@ -1,7 +1,7 @@
 @import '../../index.scss';
 
 .AppHeader {
-    @include dimension(100%, 100%);
+    @include dimension(100%, auto);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
