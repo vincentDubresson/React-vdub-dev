@@ -1,0 +1,62 @@
+@import '../../index.scss';
+
+.AppHeader {
+    @include dimension(100%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .AppHeaderLogo {
+        width: 80%;
+        max-width: 400px;
+    }
+    .AppHeaderTitleContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 30px;
+        .AppHeaderTitle {
+            text-align: center;
+            font-weight: 300;
+        }
+        .AppHeaderProjectButton {
+            cursor: $pointerCursor;
+            @include button(50%, 35px, $blueIndigo, none);
+            color: $gainsboro;
+            transition: 0.3s;
+            &:hover {
+                background-color: $mustardYellow;
+                color: $midnightBlue;
+            }
+        }
+        .AppHeaderContactButton {
+            cursor: $pointerCursor;
+            @include button(50%, 35px, lighten($blueIndigo, 45%), none);
+            color: $midnightBlue;
+            transition: 0.3s;
+            &:hover {
+                background-color: lighten($mustardYellow, 15%);
+                color: $blueIndigo;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .AppHeader {
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 1100px;
+        margin: auto;
+        margin-top: 30px;
+        .AppHeaderLogo {
+            width: 45%;
+            max-width: 600px;
+        }
+        .AppHeaderTitleContainer {
+            max-width: 450px;
+        }
+    }
+}

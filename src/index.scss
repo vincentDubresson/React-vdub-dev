@@ -11,12 +11,13 @@ $mustardYellow: #D5A419;
 
 // Cursors
 $defaultCursor: url("./assets/images/cursors/cursor-default.png"), default;
-$pointerCurror: url("./assets/images/cursors/cursor-pointer.png"), pointer;
+$pointerCursor: url("./assets/images/cursors/cursor-pointer.png"), pointer;
 
 // Mixins
 @mixin lightenBackground($color) {
   background-color: lighten($color, 10%);
 }
+
 @mixin dimension($w, $h) {
   width: $w;
   height: $h;
@@ -34,6 +35,19 @@ $pointerCurror: url("./assets/images/cursors/cursor-pointer.png"), pointer;
   right: $right;
 }
 
+@mixin button($w, $h, $bkg, $border) {
+  background-color: $bkg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $w;
+  height: $h;
+  border: $border;
+  border-radius: 5px;
+  font-family: $roboto;
+  font-size: 1rem;
+}
+
 
 // Default SCSS config
 html {
@@ -47,6 +61,7 @@ html {
 body {
   background-color: $whiteSmoke;
   color: $midnightBlue;
+  width: 100vw;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
