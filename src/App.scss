@@ -9,8 +9,9 @@
     position: relative;
     @include dimension(100vw, auto);
     .HeaderTriangle {
-      position: absolute;
-      bottom: calc(-65px - 3vw);
+      box-sizing: border-box;
+      //position: absolute;
+      //bottom: calc(-65px - 3vw);
       display : inline-block;
       height : 0;
       width : 0;
