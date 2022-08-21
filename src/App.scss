@@ -6,8 +6,18 @@
   justify-content: center;
   align-items: center;
   .Header {
+    position: relative;
     @include dimension(100vw, auto);
-    border: 1px solid black;
+    .HeaderTriangle {
+      position: absolute;
+      bottom: calc(-65px - 3vw);
+      display : inline-block;
+      height : 0;
+      width : 0;
+      border-top : calc(65px + 3vw) solid $whiteSmoke;
+      border-right : 50vw solid $midnightBlue;
+      border-left : 50vw solid $midnightBlue;
+    }
   }
 }
 
