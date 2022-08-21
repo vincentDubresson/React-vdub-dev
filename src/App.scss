@@ -19,5 +19,8 @@
       border-left : 50vw solid $midnightBlue;
     }
   }
+  .MainSite {
+    @include dimension(100vw, auto);
+  }
 }
 
