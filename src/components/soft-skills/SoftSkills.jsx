@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React, { useState } from 'react';
-import fixedGif from '../../assets/images/icons/softskills/pedagogy-icon.png';
-import realGif from '../../assets/images/icons/softskills/pedagogy-icon.gif';
+import fixedGif from '../../assets/images/icons/softskills/organisation-icon.png';
+import realGif from '../../assets/images/icons/softskills/organisation-icon.gif';
 
 export default function SoftSkills() {
   const [displayGif, setDisplayGif] = useState(fixedGif);
@@ -10,13 +10,13 @@ export default function SoftSkills() {
     setDisplayGif(realGif);
     setTimeout(() => {
       setDisplayGif(fixedGif);
-    }, '2000');
+    }, '2500');
   };
 
   return (
     <img
+      style={{ width: '8rem' }}
       onMouseOver={gif}
-      /* onMouseOut={() => { setDisplayGif(fixedGif); }} */
       src={displayGif}
       alt="Croquis d'un bureau de développeur web"
     />

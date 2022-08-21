@@ -3,18 +3,20 @@
 $roboto: 'Roboto', sans-serif;
 
 // Color Palette
-$midnightBlue: #222D47;
-$indianRed: #CC4261;
-$mediumOrchid: #9F599C;
-$cornFlowerBlue: #7D8CDC;
-$mustardYellow: #e8b730;
 $whiteSmoke: #F0F2F3;
+$gainsboro: #DCDCDC;
+$blueIndigo: #515A78;
+$midnightBlue: #222D47;
+$mustardYellow: #D5A419;
 
 // Cursors
 $defaultCursor: url("./assets/images/cursors/cursor-default.png"), default;
 $pointerCurror: url("./assets/images/cursors/cursor-pointer.png"), pointer;
 
 // Mixins
+@mixin lightenBackground($color) {
+  background-color: lighten($color, 10%);
+}
 @mixin dimension($w, $h) {
   width: $w;
   height: $h;
@@ -43,9 +45,11 @@ html {
 }
 
 body {
-  background-color: $mediumOrchid;
+  background-color: #515A78;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // Default text config
