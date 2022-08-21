@@ -7,6 +7,7 @@ export default function App() {
     <div className="App">
       <header className="Header">
         <Header />
+        <div className="HeaderTriangle" />
       </header>
     </div>
   );
