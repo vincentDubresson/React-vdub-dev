@@ -6,7 +6,6 @@ export default function Navbar() {
   const [navbarDisplay, setNavbarDisplay] = useState('displayNone');
 
   const navbarOpacity = () => {
-    console.log(window.scrollY);
     if (
       (window.innerWidth > 600 && window.scrollY > 400)
             || (window.innerWidth < 600 && window.scrollY > 300)
