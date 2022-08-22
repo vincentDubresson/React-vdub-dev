@@ -11,18 +11,18 @@ import figmaLightIcon from '../assets/images/icons/technologies/light/figma-ligh
 import confluenceLightIcon from '../assets/images/icons/technologies/light/confluence-light.svg';
 import githubLightIcon from '../assets/images/icons/technologies/light/github-light.svg';
 
-import html5DarkIcon from '../assets/images/icons/technologies/light/html5-dark.svg';
-import css3DarkIcon from '../assets/images/icons/technologies/light/css3-dark.svg';
-import bootstrapDarkIcon from '../assets/images/icons/technologies/light/bootstrap-dark.svg';
-import sassDarkIcon from '../assets/images/icons/technologies/light/sass-dark.svg';
-import javascriptDarkIcon from '../assets/images/icons/technologies/light/javascript-dark.svg';
-import reactDarkIcon from '../assets/images/icons/technologies/light/react-dark.svg';
-import phpDarkIcon from '../assets/images/icons/technologies/light/php-dark.svg';
-import symfonyDarkIcon from '../assets/images/icons/technologies/light/symfony-dark.svg';
-import mysqlDarkIcon from '../assets/images/icons/technologies/light/mysql-dark.svg';
-import figmaDarkIcon from '../assets/images/icons/technologies/light/figma-dark.svg';
-import confluenceDarkIcon from '../assets/images/icons/technologies/light/confluence-dark.svg';
-import githubDarkIcon from '../assets/images/icons/technologies/light/github-dark.svg';
+import html5DarkIcon from '../assets/images/icons/technologies/dark/html5-dark.svg';
+import css3DarkIcon from '../assets/images/icons/technologies/dark/css3-dark.svg';
+import bootstrapDarkIcon from '../assets/images/icons/technologies/dark/bootstrap-dark.svg';
+import sassDarkIcon from '../assets/images/icons/technologies/dark/sass-dark.svg';
+import javascriptDarkIcon from '../assets/images/icons/technologies/dark/javascript-dark.svg';
+import reactDarkIcon from '../assets/images/icons/technologies/dark/react-dark.svg';
+import phpDarkIcon from '../assets/images/icons/technologies/dark/php-dark.svg';
+import symfonyDarkIcon from '../assets/images/icons/technologies/dark/symfony-dark.svg';
+import mysqlDarkIcon from '../assets/images/icons/technologies/dark/mysql-dark.svg';
+import figmaDarkIcon from '../assets/images/icons/technologies/dark/figma-dark.svg';
+import confluenceDarkIcon from '../assets/images/icons/technologies/dark/confluence-dark.svg';
+import githubDarkIcon from '../assets/images/icons/technologies/dark/github-dark.svg';
 
 export const TechLightIcons = [
   {
