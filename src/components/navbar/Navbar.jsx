@@ -3,14 +3,31 @@ import './Navbar.scss';
 import { NavbarIcons } from '../../data/NavbarIcons';
 
 export default function Navbar() {
-  const [navbarDisplay, setNavbarDisplay] = useState('AppNavbar navbarBottom');
+  const [navbarDisplay, setNavbarDisplay] = useState('displayNone');
 
   const navbarOpacity = () => {
-    if (window.scrollY > 300 && window.innerWidth < 600) {
+    console.log(window.scrollY);
+    if (
+      (window.innerWidth > 600 && window.scrollY > 400)
+            || (window.innerWidth < 600 && window.scrollY > 300)
+    ) {
+      setNavbarDisplay('AppNavbar');
+    } else if (window.innerWidth > 600 && window.scrollY < 400) {
+      setNavbarDisplay('AppNavbar navbarRight');
+    } else {
+      setNavbarDisplay('AppNavbar navbarBottom');
+    }
+
+    /*     if (window.scrollY > 300 && window.innerWidth < 600) {
       setNavbarDisplay('AppNavbar');
     } else {
       setNavbarDisplay('AppNavbar navbarBottom');
     }
+    if (window.scrollY > 400 && window.innerWidth > 600) {
+      setNavbarDisplay('AppNavbar');
+    } else {
+      setNavbarDisplay('AppNavbar navbarRight');
+    } */
   };
 
   useEffect(() => {

@@ -27,3 +27,29 @@
 .navbarBottom {
     bottom: -50px;
 }
+
+.navbarRight {
+    right: -70px !important;
+}
+
+.displayNone {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .AppNavbar {
+        @include dimension(50px, 100vh);
+        background-color: rgba(213, 164, 25, 0.8);
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 1;
+        .AppNavbarButton {
+            @include dimension(100%, 80px);
+            &:hover {
+                background-color: lighten(rgba(213, 164, 25, 0.6), 15%);
+            }
+        }
+    }
+}
