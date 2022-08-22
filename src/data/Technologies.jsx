@@ -108,7 +108,7 @@ export const TechLightIcons = [
     sourceDark: githubDarkIcon,
     alt: 'Icône de Github',
     description: 'Github'
-  },
+  }
 ];
 
 export default { TechLightIcons };

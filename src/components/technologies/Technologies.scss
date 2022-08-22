@@ -2,8 +2,28 @@
 
 .AppTechnologies {
     @include dimension(100%, 100%);
+    margin-bottom: 150px;
     .AppTechnologiesTitle {
         text-align: center;
         padding-top: 50px;
+    }
+    .AppTechnologiesContainer {
+        @include dimension(90%, auto);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 40px;
+        grid-column-gap: 20px;
+        margin: auto;
+        .AppTechnologiesIcons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            img {
+                width: 50px;
+            }
+        }
     }
 }

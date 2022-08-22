@@ -36,7 +36,7 @@
 }
 
 .NavbarRight {
-    right: -200px !important;
+    right: -210px !important;
 }
 
 .NavbarOpen {
@@ -49,10 +49,10 @@
 
 @media screen and (min-width: 600px) {
     .AppNavbar {
-        @include dimension(200px, 100vh);
+        @include dimension(210px, 100vh);
         background-color: rgba(213, 164, 25, 0.8);
         top: 0;
-        right: -150px;
+        right: -160px;
         flex-direction: column;
         justify-content: flex-start;
         z-index: 1;
