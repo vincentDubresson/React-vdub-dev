@@ -17,17 +17,6 @@ export default function Navbar() {
     } else {
       setNavbarDisplay('AppNavbar navbarBottom');
     }
-
-    /*     if (window.scrollY > 300 && window.innerWidth < 600) {
-      setNavbarDisplay('AppNavbar');
-    } else {
-      setNavbarDisplay('AppNavbar navbarBottom');
-    }
-    if (window.scrollY > 400 && window.innerWidth > 600) {
-      setNavbarDisplay('AppNavbar');
-    } else {
-      setNavbarDisplay('AppNavbar navbarRight');
-    } */
   };
 
   useEffect(() => {
@@ -39,6 +28,9 @@ export default function Navbar() {
 
   return (
     <nav className={navbarDisplay}>
+      <div className="AppNavbarButton">
+        <p>hi</p>
+      </div>
       {NavbarIcons.map((Icon) => (
         <div key={Icon.number} className="AppNavbarButton">
           <img
@@ -46,6 +38,7 @@ export default function Navbar() {
             src={Icon.source}
             alt={Icon.alt}
           />
+          <p className="AppNavbarDescription">{Icon.description}</p>
         </div>
       ))}
     </nav>
