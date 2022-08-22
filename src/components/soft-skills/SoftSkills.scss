@@ -1,2 +1,12 @@
 @import '../../index.scss';
 
+.AppSoftskills {
+    @include dimension(100%, 100%);
+    background-color: $blueIndigo;
+    margin-top: -4px;
+    color: $gainsboro;
+    .AppSoftskillsTitle {
+        text-align: center;
+        padding-top: 50px;
+    }
+}
