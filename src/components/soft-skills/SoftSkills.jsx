@@ -1,24 +1,34 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-import React, { useState } from 'react';
-import fixedGif from '../../assets/images/icons/softskills/organisation-icon.png';
-import realGif from '../../assets/images/icons/softskills/organisation-icon.gif';
+import React from 'react';
+import { softskillsIcons } from '../../data/Softskills';
+import './SoftSkills.scss';
 
 export default function SoftSkills() {
-  const [displayGif, setDisplayGif] = useState(fixedGif);
-
-  const gif = () => {
-    setDisplayGif(realGif);
-    setTimeout(() => {
-      setDisplayGif(fixedGif);
-    }, '2500');
-  };
-
   return (
-    <img
-      style={{ width: '8rem' }}
-      onMouseOver={gif}
-      src={displayGif}
-      alt=""
-    />
+    <section className="AppSoftskills">
+      <h2 className="AppSoftskillsTitle">Soft-skills</h2>
+      <div className="AppSoftskillsContainer">
+        {
+          softskillsIcons.map((Icon) => (
+            <div key={Icon.number} className="AppSoftskillsIcons">
+              <img
+                className="AppSoftskillsIcon"
+                onMouseOver={(e) => {
+                  const newGif = e.currentTarget;
+                  const newIcon = e.currentTarget;
+                  newGif.src = Icon.sourceGif;
+                  setTimeout(() => {
+                    newIcon.src = Icon.sourceIcon;
+                  }, '2500');
+                }}
+                src={Icon.sourceIcon}
+                alt={Icon.alt}
+              />
+              <p>{Icon.description}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
   );
 }
