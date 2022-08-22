@@ -7,14 +7,6 @@ import arrowIcon from '../../assets/images/icons/navbar/dark/arrow-icon.png';
 
 export default function Navbar() {
   const [navbarDisplay, setNavbarDisplay] = useState('DisplayNone');
-  const [navbarOpen, setNavbarOpen] = useState(false);
-
-  const handleNavbar = () => {
-    setNavbarOpen(!navbarOpen);
-    return navbarOpen;
-  };
-
-  const NavbarOpen = navbarOpen ? 'NavbarOpen' : null;
 
   const navbarOpacity = () => {
     if (
@@ -36,8 +28,17 @@ export default function Navbar() {
     };
   }, []);
 
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  const handleNavbar = () => {
+    setNavbarOpen(!navbarOpen);
+    return navbarOpen;
+  };
+
+  const NavbarOpenClass = navbarOpen ? 'NavbarOpen' : null;
+
   return (
-    <nav className={`${navbarDisplay} ${NavbarOpen}`}>
+    <nav className={`${navbarDisplay} ${NavbarOpenClass}`}>
       <div onClick={handleNavbar} className="AppNavbarButton">
         <img
           style={{ transform: navbarOpen ? 'rotateZ(180deg)' : 'rotateZ(0deg)', transition: '0.3s' }}
