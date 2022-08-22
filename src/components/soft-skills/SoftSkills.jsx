@@ -18,7 +18,7 @@ export default function SoftSkills() {
       style={{ width: '8rem' }}
       onMouseOver={gif}
       src={displayGif}
-      alt="Croquis d'un bureau de développeur web"
+      alt=""
     />
   );
 }
