@@ -1,0 +1,76 @@
+@import "../../index.scss";
+
+.AppNavbar {
+    position: fixed;
+    bottom: 0;
+    @include dimension(100vw, 50px);
+    background-color: $mustardYellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s;
+    .AppNavbarButton {
+        cursor: $pointerCursor;
+        @include dimension(25%, 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:first-child {
+            display: none;
+            transition: 0.3s;
+        }
+        &:hover {
+            background-color: lighten($mustardYellow, 15%);
+        }
+        .AppNavbarIcon {
+            @include dimension(30px, 30px);
+        }
+        .AppNavbarDescription {
+            display: none;
+        }
+    }
+}
+
+.NavbarBottom {
+    bottom: -50px;
+}
+
+.NavbarRight {
+    right: -200px !important;
+}
+
+.NavbarOpen {
+    right: 0 !important;
+}
+
+.DisplayNone {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+    .AppNavbar {
+        @include dimension(200px, 100vh);
+        background-color: rgba(213, 164, 25, 0.8);
+        top: 0;
+        right: -150px;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 1;
+        .AppNavbarButton {
+            @include dimension(100%, 80px);
+            justify-content: flex-start;
+            padding-left: 10px;
+            margin-left: 10px;
+            gap: 20px;
+            &:first-child {
+                display: flex;
+            }
+            &:hover {
+                background-color: lighten(rgba(213, 164, 25, 0.6), 15%);
+            }
+            .AppNavbarDescription {
+                display: block;
+            }
+        }
+    }
+}
