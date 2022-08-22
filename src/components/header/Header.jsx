@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import websiteLogo from '../../assets/images/logo/gif2.gif';
+import websiteLogo from '../../assets/images/logo/logo.gif';
 
 export default function Header() {
   return (
