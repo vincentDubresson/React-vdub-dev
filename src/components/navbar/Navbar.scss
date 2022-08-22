@@ -4,7 +4,7 @@
     position: fixed;
     bottom: 0;
     @include dimension(100vw, 50px);
-    background-color: $mustardYellow;
+    background-color: rgba(213, 164, 25, 0.8);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -20,7 +20,7 @@
             transition: 0.3s;
         }
         &:hover {
-            background-color: lighten($mustardYellow, 15%);
+            background-color: lighten(rgba(213, 164, 25, 0.6), 15%);
         }
         .AppNavbarIcon {
             @include dimension(30px, 30px);
