@@ -1,0 +1,9 @@
+@import '../../index.scss';
+
+.AppTechnologies {
+    @include dimension(100%, 100%);
+    .AppTechnologiesTitle {
+        text-align: center;
+        padding-top: 50px;
+    }
+}

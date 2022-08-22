@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/navbar/Navbar';
 import Header from './components/header/Header';
 import About from './components/about/About';
+import Technologies from './components/technologies/Technologies';
 import './App.scss';
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
       </header>
       <main className="MainSite">
         <About />
+        <Technologies />
       </main>
     </div>
   );
