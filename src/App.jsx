@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/header/Header';
+import About from './components/about/About';
 import './App.scss';
 
 export default function App() {
@@ -9,6 +10,9 @@ export default function App() {
         <Header />
         <div className="HeaderTriangle" />
       </header>
+      <main className="MainSite">
+        <About />
+      </main>
     </div>
   );
 }
