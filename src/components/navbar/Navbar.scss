@@ -8,13 +8,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    transition: 0.3s;
     .AppNavbarButton {
+        cursor: $pointerCursor;
         @include dimension(25%, 100%);
         display: flex;
         justify-content: center;
         align-items: center;
-        .AppNavBarIcon {
+        &:hover {
+            background-color: lighten($mustardYellow, 15%);
+        }
+        .AppNavbarIcon {
             @include dimension(30px, 30px);
         }
     }
+}
+
+.navbarBottom {
+    bottom: -50px;
 }
