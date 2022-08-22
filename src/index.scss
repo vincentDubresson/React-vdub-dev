@@ -104,6 +104,29 @@ p, span, a, input, textarea {
   font-size: 1rem;
 }
 
+/* Modification of the scrollbar properties */
+/* Works on Firefox */
+* {
+  scrollbar-width: 2px;
+  scrollbar-color: $mustardYellow;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 2px;
+  margin-left: 5px;
+  background-color: $mustardYellow;
+}
+
+*::-webkit-scrollbar-track {
+  background: $midnightBlue;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $mustardYellow;
+  border: none;
+}
+
 // Media-queries
 @media screen and (min-width: 900px) {
   html {
