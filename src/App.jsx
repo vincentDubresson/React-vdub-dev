@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar';
 import Header from './components/header/Header';
 import About from './components/about/About';
 import Technologies from './components/technologies/Technologies';
+import SoftSkills from './components/soft-skills/SoftSkills';
 import './App.scss';
 
 export default function App() {
@@ -16,6 +17,8 @@ export default function App() {
       <main className="MainSite">
         <About />
         <Technologies />
+        <div className="TechnologiesSeparator" />
+        <SoftSkills />
       </main>
     </div>
   );

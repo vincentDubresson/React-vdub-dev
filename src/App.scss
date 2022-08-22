@@ -21,6 +21,13 @@
   .MainSite {
     @include dimension(100vw, auto);
     margin-top: -4px;
+    .TechnologiesSeparator {
+      display : inline-block;
+      height : 0;
+      width : 0;
+      border-top : 2vw solid $whiteSmoke;
+      border-right : 100vw solid $blueIndigo;
+    }
   }
 }
 
