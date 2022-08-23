@@ -4,6 +4,7 @@ import Header from './components/header/Header';
 import About from './components/about/About';
 import Technologies from './components/technologies/Technologies';
 import SoftSkills from './components/soft-skills/SoftSkills';
+import Projects from './components/projects/Projects';
 import './App.scss';
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
         <Technologies />
         <div className="TechnologiesSeparator" />
         <SoftSkills />
+        <Projects />
       </main>
     </div>
   );

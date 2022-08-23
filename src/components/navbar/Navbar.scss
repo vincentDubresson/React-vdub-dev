@@ -9,8 +9,9 @@
     justify-content: space-around;
     align-items: center;
     transition: 0.3s;
+    z-index: 1;
     .AppNavbarButton {
-        cursor: $pointerCursor;
+        cursor: pointer;
         @include dimension(25%, 100%);
         display: flex;
         justify-content: center;
