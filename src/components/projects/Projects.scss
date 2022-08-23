@@ -1,12 +1,103 @@
 @import '../../index.scss';
 
 .AppProjects {
-    @include dimension(100%, 100vh);
+    @include dimension(100%, auto);
     background-color: $whiteSmoke;
     margin-top: -4px;
     color: $midnightBlue;
+    padding-bottom: 50px;
     .AppProjectsTitle {
         text-align: center;
         padding-top: 50px;
+    }
+    .AppProjectsCarousel {
+        @include dimension(90%, auto);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 540px;
+        padding-top: 20px;
+        gap: 30px;
+        .WebsiteCarousel {
+            overflow: hidden;
+            position: relative;
+            @include dimension(90%, 300px);
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 5px 5px 2px $blueIndigo;
+            .WebsiteCarouselPicture {
+                @include dimension(535px, 300px);
+            }
+            .WebsiteCarouselDetails {
+                background-color: rgba(0, 0, 0, 0.7);
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include dimension(100%, 100%);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 5px;
+                padding-top: 15px;
+                color: $gainsboro;
+                opacity: 0;
+                transition: 0.3s;
+                &:hover {
+                    opacity: 1;
+                }
+                .WebsiteCarouselTitle {
+                    margin-bottom: 5px;
+                }
+                .WebsiteCarouselDescription {
+                    width: 80%;
+                    text-align: justify;
+                    padding-bottom: 15px;
+                }
+                .WebsiteCarouselTechTitle {
+                    margin-bottom: 5px;
+                }
+                .WebsiteCarouselTecnologies {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    padding-bottom: 15px;
+                    .WebsiteCarouselTechPicture {
+                        width: 45px;
+                    }
+                }
+                .WebsiteCarouselButton {
+                    cursor: $pointerCursor;
+                    @include button(35%, 25px, lighten($blueIndigo, 45%), none);
+                    color: $midnightBlue;
+                    transition: 0.3s;
+                    &:hover {
+                        background-color: lighten($mustardYellow, 15%);
+                        color: $blueIndigo;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .AppProjectsCarousel {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        max-width: 1200px !important;
+        .WebsiteCarousel {
+            width: 45% !important;
+            max-width: 535px;
+        }
+    }
+}
+
+@media screen and (min-width: 1225px) {
+    .WebsiteCarousel {
+        width: 0% !important;
     }
 }
