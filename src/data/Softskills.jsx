@@ -1,38 +1,30 @@
-import adaptabilityIcon from '../assets/images/icons/softskills/adaptability-icon.png';
-import adaptabilityGif from '../assets/images/icons/softskills/adaptability-icon.gif';
-import organisationIcon from '../assets/images/icons/softskills/organisation-icon.png';
-import organisationGif from '../assets/images/icons/softskills/organisation-icon.gif';
-import pedagogyIcon from '../assets/images/icons/softskills/pedagogy-icon.png';
-import pedagogyGif from '../assets/images/icons/softskills/pedagogy-icon.gif';
-import curiosityIcon from '../assets/images/icons/softskills/curiosity-icon.png';
-import curiosityGif from '../assets/images/icons/softskills/curiosity-icon.gif';
+import teamWork from '../assets/images/icons/softskills/Team.gif';
+import organisation from '../assets/images/icons/softskills/Task.gif';
+import pedagogy from '../assets/images/icons/softskills/Teacher.gif';
+import curiosity from '../assets/images/icons/softskills/Curious.gif';
 
 export const softskillsIcons = [
   {
     number: 1,
-    sourceIcon: adaptabilityIcon,
-    sourceGif: adaptabilityGif,
-    alt: "Icone animé représentant l'adaptabilité",
-    description: 'Adaptabilité'
+    sourceGif: teamWork,
+    alt: "Icone animé représentant l'esprit d'équipe",
+    description: 'Esprit d\'équipe'
   },
   {
     number: 2,
-    sourceIcon: organisationIcon,
-    sourceGif: organisationGif,
+    sourceGif: organisation,
     alt: "Icone animé représentant l'adaptabilité",
     description: 'Organisation'
   },
   {
     number: 3,
-    sourceIcon: pedagogyIcon,
-    sourceGif: pedagogyGif,
+    sourceGif: pedagogy,
     alt: "Icone animé représentant l'adaptabilité",
     description: 'Pédagogie'
   },
   {
     number: 4,
-    sourceIcon: curiosityIcon,
-    sourceGif: curiosityGif,
+    sourceGif: curiosity,
     alt: "Icone animé représentant l'adaptabilité",
     description: 'Curiosité'
   }
