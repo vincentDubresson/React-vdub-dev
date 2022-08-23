@@ -28,6 +28,13 @@
       border-top : 2vw solid $whiteSmoke;
       border-right : 100vw solid $blueIndigo;
     }
+    .ProjectsSeparator {
+      display : inline-block;
+      height : 0;
+      width : 0;
+      border-top : 2vw solid $gainsboro;
+      border-left : 100vw solid $midnightBlue;
+    }
   }
 }
 
