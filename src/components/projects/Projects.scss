@@ -11,7 +11,7 @@
         padding-top: 50px;
     }
     .AppProjectsCarousel {
-        @include dimension(90%, auto);
+        @include dimension(95%, auto);
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -54,7 +54,7 @@
                 .WebsiteCarouselDescription {
                     width: 80%;
                     text-align: justify;
-                    padding-bottom: 15px;
+                    padding-bottom: 5px;
                 }
                 .WebsiteCarouselTechTitle {
                     margin-bottom: 5px;
@@ -64,7 +64,7 @@
                     justify-content: center;
                     align-items: center;
                     gap: 20px;
-                    padding-bottom: 15px;
+                    padding-bottom: 10px;
                     .WebsiteCarouselTechPicture {
                         width: 45px;
                     }
