@@ -21,6 +21,7 @@ export default function App() {
         <div className="TechnologiesSeparator" />
         <SoftSkills />
         <Projects />
+        <div className="ProjectsSeparator" />
       </main>
     </div>
   );
