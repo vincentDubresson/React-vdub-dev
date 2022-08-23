@@ -9,6 +9,9 @@ export default function About() {
         <div className="AppAboutTextContainer">
           <h2 className="AppAboutTitle">Qui suis-je ?</h2>
           <p className="AppAboutText">
+            Hello World ! Je m&#39;appelle Vincent, 39 ans. Je suis de Lyon.
+          </p>
+          <p className="AppAboutText">
             Fort d&#39;une expérience de 12 ans dans le secteur du transport
             sanitaire, et de 4 ans en tant que technico-commercial dans
             la mécanique de précision, j&#39;ai su acquérir des compétences
