@@ -6,7 +6,7 @@ import { TechLightIcons } from '../../data/Technologies';
 export default function Technologies() {
   return (
     <section className="AppTechnologies">
-      <h2 className="AppTechnologiesTitle">Techologies</h2>
+      <h2 className="AppTechnologiesTitle">Technologies</h2>
       <div className="AppTechnologiesContainer">
         {
             TechLightIcons.map((Icon) => (
