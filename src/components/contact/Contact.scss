@@ -1,0 +1,28 @@
+@import '../../index.scss';
+
+.AppContact {
+    @include dimension(100%, auto);
+    background-color: $midnightBlue;
+    margin-top: -4px;
+    color: $gainsboro;
+    padding-bottom: 50px;
+    .AppContactTitle {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .AppContactFormContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        max-width: 500px;
+        margin: auto;
+        gap: 20px;
+        .AppContactPicture {
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+        }
+    }
+}
