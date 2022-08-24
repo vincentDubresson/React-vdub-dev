@@ -36,5 +36,19 @@
       border-left : 100vw solid $midnightBlue;
     }
   }
+  .Footer {
+    @include dimension(100vw, 120px);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Footer {
+    padding-bottom: 0 !important;
+  }
 }
 
