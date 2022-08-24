@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import './ContactForm.scss';
 
 export default function ContactForm() {
@@ -25,7 +26,17 @@ export default function ContactForm() {
     if (messageSend === '') errors.push('Le champ "Message" est obligatoire');
     // eslint-disable-next-line no-alert
     if (errors.length > 0) return errors.forEach((error) => { alert(error); });
-    return console.log('ok');
+    return emailjs.sendForm('service_wy2czja', 'template_u42mtvv', e.target, '0yYh9aqGJSxgTtzdQ')
+      .then(() => {
+        // eslint-disable-next-line no-alert
+        setFirstname('');
+        setLastname('');
+        setEmail('');
+        setMessage('');
+        alert('Votre message a bien été envoyé. Nous reviendrons vers vous rapidement. Merci !');
+      }, (error) => {
+        console.log(error.text);
+      });
   };
 
   return (
