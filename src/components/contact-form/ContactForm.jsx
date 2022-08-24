@@ -28,14 +28,15 @@ export default function ContactForm() {
     if (errors.length > 0) return errors.forEach((error) => { alert(error); });
     return emailjs.sendForm('service_wy2czja', 'template_u42mtvv', e.target, '0yYh9aqGJSxgTtzdQ')
       .then(() => {
-        // eslint-disable-next-line no-alert
         setFirstname('');
         setLastname('');
         setEmail('');
         setMessage('');
+        // eslint-disable-next-line no-alert
         alert('Votre message a bien été envoyé. Nous reviendrons vers vous rapidement. Merci !');
-      }, (error) => {
-        console.log(error.text);
+      }, () => {
+        // eslint-disable-next-line no-alert
+        alert('Une erreur s\'est produite à l\'envoi de votre message. Merci de réessayer.');
       });
   };
 
