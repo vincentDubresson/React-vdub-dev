@@ -6,6 +6,7 @@ import Technologies from './components/technologies/Technologies';
 import SoftSkills from './components/soft-skills/SoftSkills';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 import './App.scss';
 
 export default function App() {
@@ -25,6 +26,9 @@ export default function App() {
         <div className="ProjectsSeparator" />
         <Contact />
       </main>
+      <footer className="Footer">
+        <Footer />
+      </footer>
     </div>
   );
 }
