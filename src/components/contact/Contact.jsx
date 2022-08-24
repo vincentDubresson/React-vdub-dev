@@ -2,6 +2,7 @@ import React from 'react';
 import ContactForm from '../contact-form/ContactForm';
 import './Contact.scss';
 import contactGif from '../../assets/images/background/Envelope.gif';
+import pdfCV from '../../assets/documents/Vincent_Dubresson_CV.pdf';
 
 export default function Contact() {
   return (
@@ -13,7 +14,7 @@ export default function Contact() {
         Je ne manquerai pas de vous répondre. Si vous souhaitez en connaître
         d&#39;avantage sur moi, vous pouvez télécharger mon Curriculum Vitae directement
         {' '}
-        <span className="AppContactTextSpan"><b>ici</b></span>
+        <a className="AppContactTextSpan" href={pdfCV} download><b>ici</b></a>
         , ou en cliquant sur l&#39;icone dans la barre de navigation. À bientôt !
       </p>
       <div className="AppContactFormContainer">

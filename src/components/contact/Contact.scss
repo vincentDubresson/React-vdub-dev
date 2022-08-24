@@ -18,6 +18,8 @@
         margin: auto;
         margin-bottom: 30px;
         .AppContactTextSpan {
+            text-decoration: none;
+            color: $gainsboro;
             cursor: $pointerCursor;
         }
     }
