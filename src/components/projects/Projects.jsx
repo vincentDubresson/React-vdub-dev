@@ -9,7 +9,7 @@ export default function Projects() {
       <div className="AppProjectsCarousel" style={{ zIndex: '0' }}>
         {
             Portfolio.map((website) => (
-              <div className="WebsiteCarousel">
+              <div key={website.title} className="WebsiteCarousel">
                 <img className="WebsiteCarouselPicture" src={website.src} alt={`Représantation du site ${website.title}`} />
                 <div className="WebsiteCarouselDetails">
                   <h3 className="WebsiteCarouselTitle">{website.title}</h3>
@@ -18,7 +18,7 @@ export default function Projects() {
                   <div className="WebsiteCarouselTecnologies">
                     {
                     website.languages.map((language) => (
-                      <img className="WebsiteCarouselTechPicture" src={language} alt="langage utilisé" />
+                      <img key={language} className="WebsiteCarouselTechPicture" src={language} alt="langage utilisé" />
                     ))
                     }
                   </div>

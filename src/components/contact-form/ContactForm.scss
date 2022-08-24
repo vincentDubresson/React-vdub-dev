@@ -1,0 +1,49 @@
+@import './../../index.scss';
+
+.AppContactForm {
+    @include dimension(100%, auto);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    .AppContactFormLabel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        align-items: center;
+        margin-bottom: 15px;
+        .AppContactFormLabelText {
+            padding-bottom: 5px;
+        }
+        .AppContactFormInput {
+            @include dimension(100%, 26px);
+            background-color: $whiteSmoke;
+            color: $midnightBlue;
+            text-align: center;
+            border: none;
+            outline: none;
+        }
+        .AppContactFormTextArea {
+            resize: none;
+            @include dimension(100%, 100px);
+            background-color: $whiteSmoke;
+            color: $midnightBlue;
+            border: none;
+            font-family: $roboto;
+            font-size: inherit;
+            outline: none;
+        }
+    }
+    .AppContactFormButton {
+        cursor: $pointerCursor;
+        @include button(35%, 30px, lighten($blueIndigo, 45%), none);
+        max-width: 175px;
+        color: $midnightBlue;
+        transition: 0.3s;
+        &:hover {
+            background-color: lighten($mustardYellow, 15%);
+        }
+    }
+}

@@ -76,7 +76,6 @@
                     transition: 0.3s;
                     &:hover {
                         background-color: lighten($mustardYellow, 15%);
-                        color: $blueIndigo;
                     }
                 }
             }
@@ -86,6 +85,7 @@
 
 @media screen and (min-width: 900px) {
     .AppProjectsCarousel {
+        width: 90% !important;
         flex-direction: row !important;
         flex-wrap: wrap;
         max-width: 1200px !important;
