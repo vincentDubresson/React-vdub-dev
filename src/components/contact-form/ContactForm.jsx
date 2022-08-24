@@ -85,7 +85,7 @@ export default function ContactForm() {
           onChange={(e) => { setMessage(e.target.value); }}
         />
       </label>
-      <input type="submit" value="submit" />
+      <input className="AppContactFormButton" type="submit" value="Envoyer" />
     </form>
   );
 }
