@@ -21,6 +21,9 @@
             text-decoration: none;
             color: $gainsboro;
             cursor: $pointerCursor;
+            &:hover {
+                color: darken($gainsboro, 20%);
+            }
         }
     }
     .AppContactFormContainer {
