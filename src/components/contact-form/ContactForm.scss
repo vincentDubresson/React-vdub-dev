@@ -13,11 +13,11 @@
         justify-content: center;
         width: 70%;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         .AppContactFormLabelText {
             font-size: 1.1rem;
             font-weight: 600;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
         }
         .AppContactFormInput {
             @include dimension(100%, 26px);
@@ -36,6 +36,7 @@
             font-family: $roboto;
             font-size: inherit;
             outline: none;
+            margin-bottom: 15px;
         }
     }
     .AppContactFormButton {
