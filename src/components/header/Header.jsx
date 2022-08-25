@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Header.scss';
 import websiteLogo from '../../assets/images/logo/logo.gif';
 
@@ -27,3 +27,9 @@ export default function Header(props) {
     </div>
   );
 }
+
+Header.propTypes = {
+  headerRef: PropTypes.element.isRequired,
+  projectsRef: PropTypes.element.isRequired,
+  contactRef: PropTypes.element.isRequired
+};

@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import ContactForm from '../contact-form/ContactForm';
 import './Contact.scss';
 import contactGif from '../../assets/images/background/Envelope.gif';
@@ -26,3 +26,7 @@ export default function Contact(props) {
     </section>
   );
 }
+
+Contact.propTypes = {
+  contactRef: PropTypes.element.isRequired
+};
