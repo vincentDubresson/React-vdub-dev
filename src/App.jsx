@@ -18,7 +18,7 @@ export default function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Navbar headerRef={headerRef} projectsRef={projectsRef} contactRef={contactRef} />
         <header className="Header">
           <Routes>
             <Route path="/" element={<Header headerRef={headerRef} projectsRef={projectsRef} contactRef={contactRef} />} />
@@ -39,5 +39,6 @@ export default function App() {
         </footer>
       </div>
     </Router>
+
   );
 }
