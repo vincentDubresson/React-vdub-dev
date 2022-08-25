@@ -44,6 +44,7 @@
         @include button(35%, 30px, lighten($blueIndigo, 45%), none);
         max-width: 175px;
         color: $midnightBlue;
+        font-weight: 600;
         transition: 0.3s;
         &:hover {
             background-color: lighten($mustardYellow, 15%);
