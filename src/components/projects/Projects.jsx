@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import './Projects.scss';
 import { Portfolio } from '../../data/Portfolio';
 
-export default function Projects() {
+export default function Projects(props) {
+  const { projectsRef } = props;
   return (
-    <section id="app_projects" className="AppProjects">
+    <section id="app_projects" className="AppProjects" ref={projectsRef}>
       <h2 className="AppProjectsTitle">Mes réalisations</h2>
       <div className="AppProjectsCarousel" style={{ zIndex: '0' }}>
         {

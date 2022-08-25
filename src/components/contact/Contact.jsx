@@ -1,12 +1,14 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import ContactForm from '../contact-form/ContactForm';
 import './Contact.scss';
 import contactGif from '../../assets/images/background/Envelope.gif';
 import pdfCV from '../../assets/documents/Vincent_Dubresson_CV.pdf';
 
-export default function Contact() {
+export default function Contact(props) {
+  const { contactRef } = props;
   return (
-    <section className="AppContact">
+    <section className="AppContact" ref={contactRef}>
       <h2 className="AppContactTitle">Contact</h2>
       <p className="AppContactText">
         Merci d&#39;avoir pris quelques minutes pour parcourir
