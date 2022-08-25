@@ -1,11 +1,21 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState, useEffect } from 'react';
 import './Navbar.scss';
-import { NavbarIcons } from '../../data/NavbarIcons';
 import arrowIcon from '../../assets/images/icons/navbar/dark/arrow-icon.png';
+import homeIcon from '../../assets/images/icons/navbar/dark/home-icon.png';
+import projectIcon from '../../assets/images/icons/navbar/dark/project-icon.png';
+import contactIcon from '../../assets/images/icons/navbar/dark/contact-icon.png';
+import downloadIcon from '../../assets/images/icons/navbar/dark/download-icon.png';
+import pdfCV from '../../assets/documents/Vincent_Dubresson_CV.pdf';
 
-export default function Navbar() {
+export default function Navbar(props) {
+  const { headerRef } = props;
+  const { projectsRef } = props;
+  const { contactRef } = props;
+
   const [navbarDisplay, setNavbarDisplay] = useState('DisplayNone');
 
   const navbarOpacity = () => {
@@ -35,6 +45,15 @@ export default function Navbar() {
     return navbarOpen;
   };
 
+  const handleScroll = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: 'smooth'
+    });
+    setNavbarOpen(false);
+  };
+
   const NavbarOpenClass = navbarOpen ? 'NavbarOpen' : null;
 
   return (
@@ -47,16 +66,38 @@ export default function Navbar() {
           alt="Icône flèche pour aggrandir le menu"
         />
       </div>
-      {NavbarIcons.map((Icon) => (
-        <div key={Icon.number} className="AppNavbarButton">
-          <img
-            className="AppNavbarIcon"
-            src={Icon.source}
-            alt={Icon.alt}
-          />
-          <p className="AppNavbarDescription">{Icon.description}</p>
-        </div>
-      ))}
+      <div onClick={() => { handleScroll(headerRef.current); }} className="AppNavbarButton">
+        <img
+          className="AppNavbarIcon"
+          src={homeIcon}
+          alt="Icône flèche pour aggrandir le menu"
+        />
+        <p className="AppNavbarDescription">Accueil</p>
+      </div>
+      <div onClick={() => { handleScroll(projectsRef.current); }} className="AppNavbarButton">
+        <img
+          className="AppNavbarIcon"
+          src={projectIcon}
+          alt="Icône flèche pour aggrandir le menu"
+        />
+        <p className="AppNavbarDescription">Mes réalisations</p>
+      </div>
+      <div onClick={() => { handleScroll(contactRef.current); }} className="AppNavbarButton">
+        <img
+          className="AppNavbarIcon"
+          src={contactIcon}
+          alt="Icône flèche pour aggrandir le menu"
+        />
+        <p className="AppNavbarDescription">Contact</p>
+      </div>
+      <div onClick={() => { window.open(pdfCV, '_blank'); }} className="AppNavbarButton">
+        <img
+          className="AppNavbarIcon"
+          src={downloadIcon}
+          alt="Icône flèche pour aggrandir le menu"
+        />
+        <p className="AppNavbarDescription">Télécharger mon CV</p>
+      </div>
     </nav>
   );
 }
