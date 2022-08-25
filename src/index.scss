@@ -12,6 +12,7 @@ $mustardYellow: #d5a419;
 // Cursors
 $defaultCursor: url("./assets/images/cursors/cursor-default.png"), default;
 $pointerCursor: url("./assets/images/cursors/cursor-pointer.png"), pointer;
+$textCursor: url("./assets/images/cursors/cursor-text.png"), text;
 
 // Mixins
 @mixin lightenBackground($color) {
