@@ -30,11 +30,6 @@
                 background-color: $mustardYellow;
                 color: $midnightBlue;
             }
-            .AppHeaderButtonLink {
-                cursor: $pointerCursor;
-                color: inherit;
-                text-decoration: none;
-            }
         }
         .AppHeaderContactButton {
             cursor: $pointerCursor;
@@ -43,11 +38,6 @@
             transition: 0.3s;
             &:hover {
                 background-color: lighten($blueIndigo, 45%);
-            }
-            .AppHeaderButtonLink {
-                cursor: $pointerCursor;
-                color: inherit;
-                text-decoration: none;
             }
         }
     }
