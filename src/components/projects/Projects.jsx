@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Projects.scss';
 import { Portfolio } from '../../data/Portfolio';
 
@@ -42,3 +42,7 @@ export default function Projects(props) {
     </section>
   );
 }
+
+Projects.propTypes = {
+  projectsRef: PropTypes.element.isRequired
+};

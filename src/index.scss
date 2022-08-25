@@ -12,6 +12,7 @@ $mustardYellow: #d5a419;
 // Cursors
 $defaultCursor: url("./assets/images/cursors/cursor-default.png"), default;
 $pointerCursor: url("./assets/images/cursors/cursor-pointer.png"), pointer;
+$textCursor: url("./assets/images/cursors/cursor-text.png"), text;
 
 // Mixins
 @mixin lightenBackground($color) {
@@ -24,13 +25,13 @@ $pointerCursor: url("./assets/images/cursors/cursor-pointer.png"), pointer;
 }
 
 @mixin absolutePosition($top, $left) {
-  position : absolute;
+  position: absolute;
   top: $top;
   left: $left;
 }
 
 @mixin absolutePositionRight($top, $right) {
-  position : absolute;
+  position: absolute;
   top: $top;
   right: $right;
 }
@@ -99,7 +100,11 @@ h6 {
   font-size: 1rem;
 }
 
-p, span, a, input, textarea {
+p,
+span,
+a,
+input,
+textarea {
   margin: 0;
   font-size: 1rem;
 }

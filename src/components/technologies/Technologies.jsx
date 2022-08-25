@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
 import './Technologies.scss';
 import { TechLightIcons } from '../../data/Technologies';
@@ -18,7 +17,7 @@ export default function Technologies() {
                   src={Icon.sourceDark}
                   alt={Icon.alt}
                 />
-                <p>{Icon.description}</p>
+                <p className="AppTechnologiesText">{Icon.description}</p>
               </div>
             ))
         }

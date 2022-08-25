@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
-import { softskillsIcons } from '../../data/Softskills';
 import './SoftSkills.scss';
+import { softskillsIcons } from '../../data/Softskills';
 
 export default function SoftSkills() {
   return (
@@ -16,7 +16,7 @@ export default function SoftSkills() {
                 src={Icon.sourceGif}
                 alt={Icon.alt}
               />
-              <p>{Icon.description}</p>
+              <p className="AppSoftskillsIconText">{Icon.description}</p>
             </div>
           ))
         }

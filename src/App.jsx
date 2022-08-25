@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Header from './components/header/Header';
 import About from './components/about/About';
@@ -16,29 +15,24 @@ export default function App() {
   const contactRef = useRef(null);
 
   return (
-    <Router>
-      <div className="App">
-        <Navbar headerRef={headerRef} projectsRef={projectsRef} contactRef={contactRef} />
-        <header className="Header">
-          <Routes>
-            <Route path="/" element={<Header headerRef={headerRef} projectsRef={projectsRef} contactRef={contactRef} />} />
-          </Routes>
-          <div className="HeaderTriangle" />
-        </header>
-        <main className="MainSite">
-          <About />
-          <Technologies />
-          <div className="TechnologiesSeparator" />
-          <SoftSkills />
-          <Projects projectsRef={projectsRef} />
-          <div className="ProjectsSeparator" />
-          <Contact contactRef={contactRef} />
-        </main>
-        <footer className="Footer">
-          <Footer />
-        </footer>
-      </div>
-    </Router>
-
+    <div className="App">
+      <Navbar headerRef={headerRef} projectsRef={projectsRef} contactRef={contactRef} />
+      <header className="Header">
+        <Header headerRef={headerRef} projectsRef={projectsRef} contactRef={contactRef} />
+        <div className="HeaderTriangle" />
+      </header>
+      <main className="MainSite">
+        <About />
+        <Technologies />
+        <div className="TechnologiesSeparator" />
+        <SoftSkills />
+        <Projects projectsRef={projectsRef} />
+        <div className="ProjectsSeparator" />
+        <Contact contactRef={contactRef} />
+      </main>
+      <footer className="Footer">
+        <Footer />
+      </footer>
+    </div>
   );
 }

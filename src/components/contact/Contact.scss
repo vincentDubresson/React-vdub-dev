@@ -6,10 +6,12 @@
     margin-top: -4px;
     color: $gainsboro;
     padding-bottom: 50px;
+
     .AppContactTitle {
         text-align: center;
         padding-top: 50px;
     }
+
     .AppContactText {
         width: 65%;
         max-width: 600px;
@@ -17,15 +19,19 @@
         line-height: 19px;
         margin: auto;
         margin-bottom: 30px;
+        padding-top: 20px;
+
         .AppContactTextSpan {
             text-decoration: none;
             color: $gainsboro;
             cursor: $pointerCursor;
+
             &:hover {
                 color: darken($gainsboro, 20%);
             }
         }
     }
+
     .AppContactFormContainer {
         display: flex;
         flex-direction: column;
@@ -35,6 +41,7 @@
         max-width: 500px;
         margin: auto;
         gap: 20px;
+
         .AppContactPicture {
             width: 90%;
             max-width: 400px;
@@ -52,6 +59,7 @@
         margin: auto;
         padding-top: 30px;
         gap: 10px !important;
+
         .AppContactPicture {
             width: 40% !important;
         }

@@ -6,10 +6,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
     .AppHeaderLogo {
         width: 80%;
         max-width: 400px;
     }
+
     .AppHeaderTitleContainer {
         display: flex;
         flex-direction: column;
@@ -17,35 +19,34 @@
         align-items: center;
         gap: 30px;
         margin-bottom: 30px;
+
         .AppHeaderTitle {
             text-align: center;
             font-weight: 300;
         }
+
         .AppHeaderProjectButton {
             cursor: $pointerCursor;
             @include button(50%, 35px, $blueIndigo, none);
             color: $gainsboro;
+            font-weight: 600;
             transition: 0.3s;
+
             &:hover {
                 background-color: $mustardYellow;
                 color: $midnightBlue;
             }
-            .AppHeaderButtonLink {
-                color: inherit;
-                text-decoration: none;
-            }
         }
+
         .AppHeaderContactButton {
             cursor: $pointerCursor;
             @include button(50%, 35px, lighten($mustardYellow, 15%), none);
             color: $midnightBlue;
+            font-weight: 600;
             transition: 0.3s;
+
             &:hover {
                 background-color: lighten($blueIndigo, 45%);
-            }
-            .AppHeaderButtonLink {
-                color: inherit;
-                text-decoration: none;
             }
         }
     }
@@ -58,10 +59,12 @@
         max-width: 1100px;
         margin: auto;
         margin-top: 30px;
+
         .AppHeaderLogo {
             width: 45%;
             max-width: 600px;
         }
+
         .AppHeaderTitleContainer {
             max-width: 450px;
         }

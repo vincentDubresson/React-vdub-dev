@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import './Navbar.scss';
 import arrowIcon from '../../assets/images/icons/navbar/dark/arrow-icon.png';
 import homeIcon from '../../assets/images/icons/navbar/dark/home-icon.png';
@@ -101,3 +100,9 @@ export default function Navbar(props) {
     </nav>
   );
 }
+
+Navbar.propTypes = {
+  headerRef: PropTypes.element.isRequired,
+  projectsRef: PropTypes.element.isRequired,
+  contactRef: PropTypes.element.isRequired
+};
