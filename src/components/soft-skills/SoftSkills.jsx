@@ -16,7 +16,7 @@ export default function SoftSkills() {
                 src={Icon.sourceGif}
                 alt={Icon.alt}
               />
-              <p>{Icon.description}</p>
+              <p className="AppSoftskillsIconText">{Icon.description}</p>
             </div>
           ))
         }
