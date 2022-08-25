@@ -18,7 +18,7 @@ export default function Technologies() {
                   src={Icon.sourceDark}
                   alt={Icon.alt}
                 />
-                <p>{Icon.description}</p>
+                <p className="AppTechnologiesText">{Icon.description}</p>
               </div>
             ))
         }
