@@ -9,6 +9,7 @@ import homeIcon from '../../assets/images/icons/navbar/dark/home-icon.png';
 import projectIcon from '../../assets/images/icons/navbar/dark/project-icon.png';
 import contactIcon from '../../assets/images/icons/navbar/dark/contact-icon.png';
 import downloadIcon from '../../assets/images/icons/navbar/dark/download-icon.png';
+import pdfCV from '../../assets/documents/Vincent_Dubresson_CV.pdf';
 
 export default function Navbar(props) {
   const { headerRef } = props;
@@ -89,7 +90,7 @@ export default function Navbar(props) {
         />
         <p className="AppNavbarDescription">Contact</p>
       </div>
-      <div onClick={handleNavbar} className="AppNavbarButton">
+      <div onClick={() => { window.open(pdfCV, '_blank'); }} className="AppNavbarButton">
         <img
           className="AppNavbarIcon"
           src={downloadIcon}
