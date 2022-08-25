@@ -25,13 +25,13 @@ $textCursor: url("./assets/images/cursors/cursor-text.png"), text;
 }
 
 @mixin absolutePosition($top, $left) {
-  position : absolute;
+  position: absolute;
   top: $top;
   left: $left;
 }
 
 @mixin absolutePositionRight($top, $right) {
-  position : absolute;
+  position: absolute;
   top: $top;
   right: $right;
 }
@@ -100,7 +100,11 @@ h6 {
   font-size: 1rem;
 }
 
-p, span, a, input, textarea {
+p,
+span,
+a,
+input,
+textarea {
   margin: 0;
   font-size: 1rem;
 }

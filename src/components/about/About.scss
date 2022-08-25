@@ -3,6 +3,7 @@
 .AppAbout {
     @include dimension(100%, 100%);
     background-color: $midnightBlue;
+
     .AppAboutContent {
         @include dimension(100%, 100%);
         display: flex;
@@ -12,6 +13,7 @@
         padding-bottom: 30px;
         gap: 30px;
         color: $gainsboro;
+
         .AppAboutTextContainer {
             display: flex;
             flex-direction: column;
@@ -21,15 +23,18 @@
             max-width: 500px;
             margin: auto;
             gap: 20px;
+
             .AppAboutTitle {
                 text-align: center;
                 padding-top: 50px;
             }
+
             .AppAboutText {
                 text-align: justify;
                 line-height: 19px;
             }
         }
+
         .AppAboutGif {
             width: 90%;
             max-width: 400px;
@@ -48,14 +53,17 @@
         margin: auto;
         padding-top: 60px;
         gap: 10px !important;
+
         .AppAboutGif {
             width: 40% !important;
         }
+
         .AppAboutTextContainer {
             width: 40% !important;
             max-width: 420px !important;
             margin-top: 0 !important;
             margin-left: 0 !important;
+
             .AppAboutTitle {
                 padding-top: 0px !important;
             }

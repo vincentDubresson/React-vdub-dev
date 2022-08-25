@@ -10,22 +10,27 @@
     align-items: center;
     transition: 0.3s;
     z-index: 1;
+
     .AppNavbarButton {
         cursor: pointer;
         @include dimension(25%, 100%);
         display: flex;
         justify-content: center;
         align-items: center;
+
         &:first-child {
             display: none;
             transition: 0.3s;
         }
+
         &:hover {
             background-color: lighten(rgba(213, 164, 25, 0.6), 15%);
         }
+
         .AppNavbarIcon {
             @include dimension(30px, 30px);
         }
+
         .AppNavbarDescription {
             display: none;
         }
@@ -57,18 +62,22 @@
         flex-direction: column;
         justify-content: flex-start;
         z-index: 1;
+
         .AppNavbarButton {
             @include dimension(100%, 80px);
             justify-content: flex-start;
             padding-left: 10px;
             margin-left: 10px;
             gap: 20px;
+
             &:first-child {
                 display: flex;
             }
+
             &:hover {
                 background-color: lighten(rgba(213, 164, 25, 0.6), 15%);
             }
+
             .AppNavbarDescription {
                 display: block;
             }

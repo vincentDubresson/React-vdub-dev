@@ -5,10 +5,12 @@
     background-color: $blueIndigo;
     margin-top: -4px;
     color: $gainsboro;
+
     .AppSoftskillsTitle {
         text-align: center;
         padding-top: 50px;
     }
+
     .AppSoftskillsContainer {
         @include dimension(90%, 100%);
         display: grid;
@@ -20,15 +22,18 @@
         margin: auto;
         padding-top: 20px;
         padding-bottom: 50px;
+
         .AppSoftskillsIcons {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 15px;
+
             .AppSoftskillsIcon {
                 width: 130px;
             }
+
             .AppSoftskillsIconText {
                 font-weight: 600;
             }
@@ -41,6 +46,7 @@
         display: flex !important;
         justify-content: space-around;
         max-width: 1200px !important;
+
         .AppSoftskillsIcon {
             width: 190px !important;
         }

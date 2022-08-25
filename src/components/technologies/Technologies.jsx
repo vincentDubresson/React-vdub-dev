@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React from 'react';
 import './Technologies.scss';
 import { TechLightIcons } from '../../data/Technologies';
