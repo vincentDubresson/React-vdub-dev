@@ -14,7 +14,7 @@ export default function Contact(props) {
         Merci d&#39;avoir pris quelques minutes pour parcourir
         mon portfolio. N&#39;hésitez pas à m&#39;envoyer un message !
         Je ne manquerai pas de vous répondre. Si vous souhaitez en connaître
-        d&#39;avantage sur moi, vous pouvez télécharger mon Curriculum Vitae directement
+        davantage sur moi, vous pouvez télécharger mon Curriculum Vitae directement
         {' '}
         <a className="AppContactTextSpan" href={pdfCV} download><b>ici</b></a>
         , ou en cliquant sur l&#39;icone dans la barre de navigation. À bientôt !
