@@ -25,6 +25,7 @@
             cursor: $pointerCursor;
             @include button(50%, 35px, $blueIndigo, none);
             color: $gainsboro;
+            font-weight: 600;
             transition: 0.3s;
             &:hover {
                 background-color: $mustardYellow;
@@ -35,6 +36,7 @@
             cursor: $pointerCursor;
             @include button(50%, 35px, lighten($mustardYellow, 15%), none);
             color: $midnightBlue;
+            font-weight: 600;
             transition: 0.3s;
             &:hover {
                 background-color: lighten($blueIndigo, 45%);
