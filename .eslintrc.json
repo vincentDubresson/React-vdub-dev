@@ -21,6 +21,6 @@
         "comma-dangle": ["error", {
             "functions": "never"
         }],
-        "react/forbid-prop-types": "never"
+        "react/forbid-prop-types": 0
     }
 }
