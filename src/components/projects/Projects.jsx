@@ -2,12 +2,23 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Projects.scss';
 import { Portfolio } from '../../data/Portfolio';
+import { filterTechIcons } from '../../data/Technologies';
 
 export default function Projects(props) {
   const { projectsRef } = props;
   return (
     <section id="app_projects" className="AppProjects" ref={projectsRef}>
       <h2 className="AppProjectsTitle">Mes réalisations</h2>
+      <div className="AppProjectsFilter">
+        {filterTechIcons.map((icon) => (
+          <img
+            key={icon.number}
+            className="AppProjectsFilterIcon"
+            src={icon.sourceDark}
+            alt={icon.alt}
+          />
+        ))}
+      </div>
       <div className="AppProjectsCarousel" style={{ zIndex: '0' }}>
         {
             Portfolio.map((website) => (
