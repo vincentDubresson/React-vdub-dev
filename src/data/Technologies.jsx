@@ -116,29 +116,25 @@ export const filterTechIcons = [
     number: 1,
     sourceLight: javascriptLightIcon,
     sourceDark: javascriptDarkIcon,
-    alt: 'Icône de Javascript',
-    description: 'Javascript'
+    alt: 'Icône de Javascript'
   },
   {
     number: 2,
     sourceLight: reactLightIcon,
     sourceDark: reactDarkIcon,
-    alt: 'Icône de React',
-    description: 'React JS'
+    alt: 'Icône de React'
   },
   {
     number: 3,
     sourceLight: phpLightIcon,
     sourceDark: phpDarkIcon,
-    alt: 'Icône de PHP',
-    description: 'PHP'
+    alt: 'Icône de PHP'
   },
   {
     number: 4,
     sourceLight: symfonyLightIcon,
     sourceDark: symfonyDarkIcon,
-    alt: 'Icône de Symfony',
-    description: 'Symfony'
+    alt: 'Icône de Symfony'
   }
 ];
 
