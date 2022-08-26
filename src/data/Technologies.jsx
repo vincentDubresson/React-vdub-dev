@@ -111,4 +111,35 @@ export const TechLightIcons = [
   }
 ];
 
-export default { TechLightIcons };
+export const filterTechIcons = [
+  {
+    number: 1,
+    sourceLight: javascriptLightIcon,
+    sourceDark: javascriptDarkIcon,
+    alt: 'Icône de Javascript',
+    description: 'Javascript'
+  },
+  {
+    number: 2,
+    sourceLight: reactLightIcon,
+    sourceDark: reactDarkIcon,
+    alt: 'Icône de React',
+    description: 'React JS'
+  },
+  {
+    number: 3,
+    sourceLight: phpLightIcon,
+    sourceDark: phpDarkIcon,
+    alt: 'Icône de PHP',
+    description: 'PHP'
+  },
+  {
+    number: 4,
+    sourceLight: symfonyLightIcon,
+    sourceDark: symfonyDarkIcon,
+    alt: 'Icône de Symfony',
+    description: 'Symfony'
+  }
+];
+
+export default { TechLightIcons, filterTechIcons };
