@@ -26,7 +26,7 @@ export const Portfolio = [
       react,
       sass
     ],
-    filter: ['javascript', 'react']
+    filter: ['all', 'javascript', 'react']
   },
   {
     number: 2,
@@ -40,7 +40,7 @@ export const Portfolio = [
       javascript,
       sass
     ],
-    filter: ['php', 'symfony', 'javascript']
+    filter: ['all', 'php', 'symfony', 'javascript']
   },
   {
     number: 3,
@@ -53,7 +53,7 @@ export const Portfolio = [
       javascript,
       css
     ],
-    filter: ['php', 'javascript']
+    filter: ['all', 'php', 'javascript']
   },
   {
     number: 4,
@@ -67,7 +67,7 @@ export const Portfolio = [
       javascript,
       sass
     ],
-    filter: ['php', 'symfony', 'javasript']
+    filter: ['all', 'php', 'symfony', 'javasript']
   },
   {
     number: 5,
@@ -80,7 +80,7 @@ export const Portfolio = [
       javascript,
       bootstrap
     ],
-    filter: ['php', 'javascript']
+    filter: ['all', 'php', 'javascript']
   },
   {
     number: 6,
@@ -94,7 +94,7 @@ export const Portfolio = [
       javascript,
       css
     ],
-    filter: ['php', 'javascript']
+    filter: ['all', 'php', 'javascript']
   }
 ];
 

@@ -10,6 +10,7 @@ import mysqlLightIcon from '../assets/images/icons/technologies/light/mysql-ligh
 import figmaLightIcon from '../assets/images/icons/technologies/light/figma-light.svg';
 import confluenceLightIcon from '../assets/images/icons/technologies/light/confluence-light.svg';
 import githubLightIcon from '../assets/images/icons/technologies/light/github-light.svg';
+import returnLightIcon from '../assets/images/icons/technologies/light/return-light.png';
 
 import html5DarkIcon from '../assets/images/icons/technologies/dark/html5-dark.svg';
 import css3DarkIcon from '../assets/images/icons/technologies/dark/css3-dark.svg';
@@ -23,6 +24,7 @@ import mysqlDarkIcon from '../assets/images/icons/technologies/dark/mysql-dark.s
 import figmaDarkIcon from '../assets/images/icons/technologies/dark/figma-dark.svg';
 import confluenceDarkIcon from '../assets/images/icons/technologies/dark/confluence-dark.svg';
 import githubDarkIcon from '../assets/images/icons/technologies/dark/github-dark.svg';
+import returnDarkIcon from '../assets/images/icons/technologies/dark/return-dark.png';
 
 export const TechLightIcons = [
   {
@@ -139,6 +141,13 @@ export const filterTechIcons = [
     sourceDark: symfonyDarkIcon,
     alt: 'Icône de Symfony',
     filter: 'symfony'
+  },
+  {
+    number: 5,
+    sourceLight: returnLightIcon,
+    sourceDark: returnDarkIcon,
+    alt: 'Icône de retour',
+    filter: 'all'
   }
 ];
 

@@ -29,7 +29,7 @@ export default function Header(props) {
 }
 
 Header.propTypes = {
-  headerRef: PropTypes.element.isRequired,
-  projectsRef: PropTypes.element.isRequired,
-  contactRef: PropTypes.element.isRequired
+  headerRef: PropTypes.object.isRequired,
+  projectsRef: PropTypes.object.isRequired,
+  contactRef: PropTypes.object.isRequired
 };
