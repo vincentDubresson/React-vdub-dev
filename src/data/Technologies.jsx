@@ -118,7 +118,7 @@ export const TechLightIcons = [
     sourceLight: vscodeLightIcon,
     sourceDark: vscodeDarkIcon,
     alt: 'Icône de Visual Studio Code',
-    description: 'Visual Studio Code',
+    description: 'VSCode',
     type: 'tools'
   },
   {
