@@ -1,0 +1,32 @@
+@import '../../index.scss';
+
+.AppTechnologiesIconsContainer {
+    @include dimension(100%, auto);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 50px;
+    grid-column-gap: 20px;
+
+    .AppTechnologiesIcons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        .AppTechnologiesIcon {
+            width: 50px;
+        }
+        
+        .AppTechnologiesText {
+            color: $blueIndigo;
+            font-weight: 600;
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .AppTechnologiesIcon {
+        width: 60px !important;
+    }
+}

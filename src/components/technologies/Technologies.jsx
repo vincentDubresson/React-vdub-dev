@@ -1,26 +1,22 @@
 import React from 'react';
+import TechnologiesIcons from '../technologies-icons/TechnologiesIcons';
 import './Technologies.scss';
-import { TechLightIcons } from '../../data/Technologies';
 
 export default function Technologies() {
   return (
     <section className="AppTechnologies">
-      <h2 className="AppTechnologiesTitle">Technologies</h2>
+      <h2 className="AppTechnologiesTitle">Technologies & Outils</h2>
       <div className="AppTechnologiesContainer">
-        {
-            TechLightIcons.map((Icon) => (
-              <div key={Icon.number} className="AppTechnologiesIcons">
-                <img
-                  className="AppTechnologiesIcon"
-                  onMouseEnter={(e) => { e.currentTarget.src = Icon.sourceLight; }}
-                  onMouseLeave={(e) => { e.currentTarget.src = Icon.sourceDark; }}
-                  src={Icon.sourceDark}
-                  alt={Icon.alt}
-                />
-                <p className="AppTechnologiesText">{Icon.description}</p>
-              </div>
-            ))
-        }
+        <h4 className="AppTechnologiesSubTitle">Front-end</h4>
+        <TechnologiesIcons type="frontend" />
+      </div>
+      <div className="AppTechnologiesContainer">
+        <h4 className="AppTechnologiesSubTitle">Back-end</h4>
+        <TechnologiesIcons type="backend" />
+      </div>
+      <div className="AppTechnologiesContainer">
+        <h4 className="AppTechnologiesSubTitle">Outils</h4>
+        <TechnologiesIcons type="tools" />
       </div>
     </section>
   );
