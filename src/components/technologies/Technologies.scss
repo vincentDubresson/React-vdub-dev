@@ -3,44 +3,32 @@
 .AppTechnologies {
     @include dimension(100%, 100%);
     margin-bottom: 50px;
+
     .AppTechnologiesTitle {
         text-align: center;
         padding-top: 50px;
     }
+
     .AppTechnologiesContainer {
         @include dimension(90%, auto);
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-row-gap: 50px;
-        grid-column-gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         max-width: 600px;
         margin: auto;
         padding-top: 20px;
-        .AppTechnologiesIcons {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            .AppTechnologiesIcon {
-                width: 50px;
-            }
-            .AppTechnologiesText {
-                color: $blueIndigo;
-                font-weight: 600;
-            }
+        margin-bottom: 50px;
+
+        .AppTechnologiesSubTitle {
+            padding-bottom: 10px;
         }
     }
 }
 
 @media screen and (min-width: 900px) {
+
     .AppTechnologiesContainer {
-        max-width: 1100px !important;
-        grid-template-columns: repeat(4, 1fr) !important;
-        grid-template-rows: repeat(3, 1fr) !important;
-        .AppTechnologiesIcon {
-            width: 60px !important;
-        }
+        max-width: 900px !important;
     }
 }
